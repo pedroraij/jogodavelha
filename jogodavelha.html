@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da Velha</title>
+    
+    <style type="text/css">
+
+        body {
+         height: 800px;	
+         background-height: 800px;
+         background-color: #ffffff;
+         background-image: linear-gradient(#008c87, #004a8c);
+        }
+    	
+    	#rodada {
+    	   margin: auto;
+           margin-top: 50px;
+           width: 110px;
+           height: 80px;
+
+    	} 
+
+        .mesa {
+            width: 400px;
+            margin: auto;
+    	}
+
+    	.espaco {
+    		margin-top: 25px;
+    		margin-right: 25px;
+    		width: 90px;
+    		height: 90px;
+    		border: 3px solid #051f35;
+    		float: left;
+    		text-align: center;
+
+
+    	}
+
+    	#iniciar{
+    		  
+              margin: auto;
+              text-align: center;
+          }
+    	
+    	
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+  <div id="rodada">
+  	<p> Rodada de: <p>
+  		<img src="" border="0" height="50">
+  </div>
+
+  <div class="mesa">
+  	
+  	
+  		<div id="1" class="espaco" jogada=""></div>
+  		<div id="2" class="espaco" jogada=""></div>
+  		<div id="3" class="espaco" jogada=""></div>
+
+    
+
+    
+  		<div id="4" class="espaco" jogada=""></div>
+  		<div id="5" class="espaco" jogada=""></div>
+  		<div id="6" class="espaco" jogada=""></div>
+    
+
+    
+  		<div id="7" class="espaco" jogada=""></div>
+  		<div id="8" class="espaco" jogada=""></div>
+  		<div id="9" class="espaco" jogada=""></div>
+    
+
+  </div>
+  <div class="resultado">
+    <p style="text-align: center;">Vencedor:</p>
+    <p id="Vencedor" style="text-align: center;"></p>
+  </div>
+
+  <div class="placar">
+  	<br>
+  	<p style="text-align: center;">Placar</p>
+  	
+    <p id="placarX" style="text-align: center;"></p>
+    <p id="placarO" style="text-align: center;"></p>
+    <button onclick="inicio()">Jogar</button>
+    <br>
+    
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
